@@ -106,11 +106,13 @@ source ~/.vim/autoload/pathogen.vim
 execute pathogen#infect()
 execute pathogen#helptags()
 syntax on
+
 let g:syntastic_python_checkers = ['python']
+let g:syntastic_python_checkers = ['pylint']
 let g:syntastic_python_exec= '/usr/bin/pylint'
 let g:syntastic_python_python_exec ='/usr/bin/python'
-" let g:syntastic_check_on_open=1
-
+let g:syntastic_check_on_open=1
+let g:syntastic_enable_python_checker = 1
 " Enable syntax highlighting                                                    
 " You need to reload this file for the change to apply                          
 filetype off                                                                    
