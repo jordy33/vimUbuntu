@@ -5,5 +5,6 @@
 * apt-get build-dep vim
 * ./configure --enable-pythoninterp --enable-cscope  --with-features=huge
 --prefix=/usr
-
+* make
+* make install
 
